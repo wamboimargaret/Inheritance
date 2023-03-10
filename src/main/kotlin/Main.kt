@@ -17,7 +17,7 @@ fun main() {
 open class Car(var make:String,var model:String,var color:String,var capacity:Int){
     fun carry(people: Int){
         var b = people-capacity
-        if (people ==capacity)
+        if (people <=capacity)
             println("Carrying capacity $people passengers.")
         else println("Over capacity by $b people.")
     }
